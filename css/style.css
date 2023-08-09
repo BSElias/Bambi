@@ -14,29 +14,25 @@ ul{
     list-style: none;
 }
 /*!---- HEADER ----*/
-/**-- img barra de nav-- **/
+/**-- img - barra de nav-- **/
 header{
-    background-color:white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
     position: sticky;
     top: 0;
     z-index: 10;
 }
-header nav ul{
-    display: flex;
+header nav{
+    background-color: white;
 }
-header nav ul li{
-    margin: 20px;
+.boton-nav{
+    border: 1px solid black;  
 }
-header nav ul li a{
-    color:grey;
+.boton-nav:hover{
+    background-color: rgba(99, 255, 47, 0.666);
+    color: white;
 }
-.logo div img{
-    width: 90px;
-    height: 90px;
+.logo{
+    width: 80px;
+    height: 80px;
 }
 
 /*!---- MAIN ----*/
@@ -100,7 +96,7 @@ header nav ul li a{
 }
 .contacto div p{
     font-size: 20px;
-    color: black;
+    color: grey;
 }
 .contacto div a{
     border: 2px solid grey;
@@ -108,7 +104,7 @@ header nav ul li a{
     color: white;
     background-color: rgba(99, 255, 47, 0.666);
     padding: 6px;
-    border-radius: 8px;
+    border-radius: 7px;
     margin: 20px;
 }
 .contacto img{
@@ -128,7 +124,7 @@ header nav ul li a{
     text-align: center;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 15px;
     margin-top: 20px;
 }
 .habitaciones > div{
@@ -156,13 +152,15 @@ header nav ul li a{
 .habitaciones div h3{
     margin-top: 30px;
     margin-bottom: 40px;
+    font-size: 22px;
     color: white;
 }
 .habitaciones div a{
     color:white;
     background-color: rgba(99, 255, 47, 0.666);
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 7px;
     padding: 5px;   
 }
 
@@ -186,7 +184,6 @@ header nav ul li a{
     color: white;
     padding: 20px;
     margin-top: 20px;
-    text-transform:;
 }
 .descuentos h3{
     text-align: center;
@@ -197,12 +194,14 @@ header nav ul li a{
 }
 .descuentos p{
     font-size: 25px;
+    color: grey;
 }
 .descuentos a{
     color:white;
     background-color: rgba(99, 255, 47, 0.666);
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 7px;
     padding:3px; 
 }
 .descuentos img{
@@ -211,16 +210,12 @@ header nav ul li a{
 }
 
 /**-- destino h2 p img - **/
-/*.destino{
-    background-color: white;
-}*/
 .destino h2{
     text-align: center;
     background-color: black;
     color: white;
-    padding: 20px;
     margin-top: 0px;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
 }
 .destino p{
@@ -255,6 +250,63 @@ header nav ul li a{
 
 }
 
+/**--Porque--**/
+.porque h2{
+    text-align: center;
+    color:black;
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    
+}
+.porque p{
+    text-align: center;
+    color: grey;
+    font-size: 35px;
+
+}
+
+/**--Carrusel--**/
+.carrusel div img{
+    width: 400px;
+    height: 550px;
+}
+.carrusel h5{
+    font-size: 30px;
+    color:white;
+}
+.carrusel p{
+    font-size: 20px;
+    color:white;
+}
+
+/**--Inte--**/
+.interesado h2{
+    text-align:center;
+    color:black;
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+}
+.interesado p{
+    text-align: center;
+    color: grey;
+    font-size: 35px;
+}
+.interesado a{
+    color:white;
+    background-color: rgba(99, 255, 47, 0.666);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 7px;
+    padding:3px;
+}
+
+
+
+
 /**-- whats--**/
 .acoso{
     position: fixed;
@@ -270,13 +322,17 @@ header nav ul li a{
 /**-- img - h2 - h3--**/
 
 .galeria h2{
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
+    text-align:center;
+    color:black;
+    font-size: 50px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
+}
+.galeria p{
+    text-align: center;
+    color: grey;
+    font-size: 35px;
 }
 .grid-galeria{
     width: 100%;
@@ -290,19 +346,19 @@ header nav ul li a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
 }
 
 .img-1{
     grid-row: span 2;
 }
+.img-4{
+    grid-row: span ;
+}
 .img-8{
     grid-row: span 2;
 }
 .img-9{
-    grid-column: span 2;
+    grid-column: span ;
 }
 .img-10{
     grid-column: span 3;
@@ -323,25 +379,30 @@ header nav ul li a{
 /**-- footer logo p h2 - **/
 
 footer{
-    background-color: grey;
+    background-color: black;
+}
+footer i{
+    font-size: 35px;
+    margin: 15px;
+    color:white;
+}
+footer i:hover{
+    color: rgba(99, 255, 47, 0.666);
 }
 footer .footer-contenedor{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     flex-wrap: wrap;
 }
 footer .footer-contenedor h2{
     font-size: 40px;
     color: white;
 }
-footer p{
-    text-align: center;
-    background-color: white;
-}
 footer img{
     width: 60px;
+    border-radius: 30px;
 }
 
 /**-- formulario -- **/
@@ -379,16 +440,26 @@ label{
 }
 
 /**-- @Media -- **/
-@media screen (max-with:1001px){
+
+@media screen and (max-width:1002px) {
     .hero h1{
-        font: size 55px;px;        
-    }
+        font-size: 55px; 
+
+    }      
+    
     .hero p{
         font-size: 22px;
 
     }
+    .hero img{
+        width: 480px;
+        height: 580px;
+    }
 
     
+}
+@media screen and (max-width:999px){
+
 }
 @media screen and (max-width:950px){
     
@@ -406,7 +477,7 @@ label{
 }
 @media screen and (max-width: 895px){
     .hero h1{
-        font-size: 50;
+        font-size: 50px;
     }
     .hero p{
         font-size: 18px;
