@@ -87,20 +87,20 @@ header nav{
 }
 .contacto div{
     width: 50%;
-    text-align: center;
+    text-align:center;
     margin: 50px;
 }
 .contacto div h2{
-    font-size: 52px;
+    font-size: 45px;
     color: black;
 }
 .contacto div p{
-    font-size: 20px;
+    font-size: 18px;
     color: grey;
 }
 .contacto div a{
     border: 2px solid grey;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     background-color: rgba(99, 255, 47, 0.666);
     padding: 6px;
@@ -471,7 +471,7 @@ label{
 
 /**-- @Media -- **/
 
-@media screen and (max-width:1002px) {
+@media screen and (max-width:1196px) {
     .hero h1{
         font-size: 55px; 
 
@@ -485,12 +485,72 @@ label{
         width: 480px;
         height: 580px;
     }
+    .hero a{
+        font-size: 20px;
+    }
+    .contacto div h2{
+        font-size: 38px;
+    }
+    .contacto div p{
+        font-size: 15px;
+    }
+    .contacto div a{
+        font-size: 13px;
+    }
 
     
 }
-@media screen and (max-width:999px){
+@media screen and (max-width:1144px){
+    .contacto div h2{
+        font-size: 30px;
+    }
+    .contacto div p{
+        font-size: 12px;
+    }
+    .contacto div a{
+        font-size: 9px;
+    }
+    .contacto img{
+        width: 750px;
+        height: 460px;
+    }
 
 }
+
+@media screen and (max-width:1083px){
+    .contacto div h2{
+        font-size: 30px;
+    }
+    .contacto div p{
+        font-size: 10px;
+    }
+    .contacto div a{
+        font-size: 9px;
+    }
+    .contacto img{
+        width: 700px;
+        height: 410px;
+    }
+}
+
+@media screen and (max-width:1008px){
+    .contacto div h2{
+        font-size: 25px;
+    }
+    .contacto div p{
+        font-size: 9px;
+    }
+    .contacto div a{
+        font-size: 9px;
+    }
+    .contacto img{
+        width: 650px;
+        height: 350px;
+    }
+}
+
+
+
 @media screen and (max-width:950px){
     
     .grid-galeria{
@@ -505,6 +565,26 @@ label{
         grid-column: span 3;
     }
 }
+
+@media screen and (max-widht:918px){
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto div h2{
+        font-size: px;
+    }
+    .contacto div p{
+        font-size: px;
+    }
+    .contacto div a{
+        font-size: px;
+    }
+    .contacto img{
+        width: 500px;
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 895px){
     .hero h1{
         font-size: 50px;
@@ -520,10 +600,10 @@ label{
         text-align: center;
     }
     .contacto div h2{
-        font-size: 40px;
+        font-size: 30px;
     }
     .contacto div p{
-        font-size: 18px;
+        font-size: 15px;
     }
     .contacto img{
         width: 700px;
@@ -596,13 +676,13 @@ label{
         font-size: 13px;
     }
     .contacto div h2{
-        font-size: 35px;
+        font-size: 25px;
     }
     .contacto div p{
         font-size: 15px;
     }
     .contacto img{
-        width: 480px;
+        width: 450px;
         height: 200px;
     }
     .descuentos h3{
@@ -627,8 +707,14 @@ label{
         width: 55%;
         margin: 10px;
     }
+    .contcto div h2{
+        font-size: 18px;
+    }
+    .contacto div p{
+        font-size: 12px;
+    }
     .contacto img{
-        width: 450px;
+        width: 430px;
         height: 180px;
     }
     .grid-galeria{
@@ -640,5 +726,14 @@ label{
     footer div{
         flex-direction: column;
     }
+}
+
+@media screen and (max-width:379px){
+    .contacto div h2{
+        font-size: 12px;
+    }
+    .contacto div p{
+        font-size: 10px;
+    }    
 }
 
