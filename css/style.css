@@ -469,7 +469,7 @@ label{
     margin-bottom: 10px;
 }
 
-/**-- @Media -- **/
+/*!---- MEDIA Q----*/
 
 @media screen and (max-width:1196px) {
     .hero h1{
@@ -547,6 +547,18 @@ label{
         width: 650px;
         height: 350px;
     }
+    .porque h2{
+        font-size: 30px; 
+    }
+    .porque p{
+        font-size: 20px;
+    }
+    .interesado h2{
+        font-size: 30px;
+    }
+    .interesado p{
+        font-size: 20px;
+    }
 }
 
 
@@ -600,6 +612,18 @@ label{
         width: 670px;
         height: 340px;
     }
+    .porque h2{
+        font-size: 25px; 
+    }
+    .porque p{
+        font-size: 15px;
+    }
+    .interesado h2{
+        font-size: 25px;
+    }
+    .interesado p{
+        font-size: 15px;
+    
     .acoso{
         display: none;
     }
@@ -659,6 +683,18 @@ label{
         width: 220px;
         height: 200px;
     }
+    .porque h2{
+        font-size: 20px; 
+    }
+    .porque p{
+        font-size: 10px;
+    }
+    .interesado h2{
+        font-size: 20px;
+    }
+    .interesado p{
+        font-size: 10px;
+    
 }
 
 @media screen and (max-width: 570px){
