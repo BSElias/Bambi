@@ -616,13 +616,13 @@ label{
         font-size: 25px; 
     }
     .porque p{
-        font-size: 15px;
+        font-size: 18px;
     }
     .interesado h2{
         font-size: 25px;
     }
     .interesado p{
-        font-size: 15px;
+        font-size: 18px;
     
     .acoso{
         display: none;
@@ -687,13 +687,13 @@ label{
         font-size: 20px; 
     }
     .porque p{
-        font-size: 10px;
+        font-size: 15px;
     }
     .interesado h2{
         font-size: 20px;
     }
     .interesado p{
-        font-size: 10px;
+        font-size: 15px;
     
 }
 
@@ -758,6 +758,7 @@ label{
         width: 430px;
         height: 180px;
     }
+
     .grid-galeria{
         grid-template-columns: 1fr;
     }
@@ -791,4 +792,3 @@ label{
         height: 130px;
     }
 }
-
