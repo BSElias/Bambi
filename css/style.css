@@ -570,15 +570,6 @@ label{
     .contacto{
         flex-direction: column;
     }
-    .contacto div h2{
-        font-size: px;
-    }
-    .contacto div p{
-        font-size: px;
-    }
-    .contacto div a{
-        font-size: px;
-    }
     .contacto img{
         width: 500px;
         height: 300px;
@@ -606,13 +597,27 @@ label{
         font-size: 15px;
     }
     .contacto img{
-        width: 700px;
-        height: 350px;
+        width: 670px;
+        height: 340px;
     }
     .acoso{
         display: none;
     }
 }
+
+@media  screen and (max-width: 715px){
+    .contacto div h2{
+        font-size: 28px;
+    }
+    .contacto div p{
+        font-size: 12px;
+    }
+    .contacto img{
+        width: 590px;
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 650px){
     header{
         flex-direction: column;
@@ -626,8 +631,8 @@ label{
         font-size: 16px;
     }
     .contacto img{
-        width: 580px;
-        height: 290px;
+        width: 570px;
+        height: 270px;
     }
     .descuentos{
         flex-direction: column;
@@ -656,7 +661,7 @@ label{
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 570px){
     header{
         flex-direction: row;
     }
@@ -699,7 +704,7 @@ label{
 }
 
 
-@media screen and (max-width:450px){
+@media screen and (max-width:470px){
     .hero h1{
         font-size: 28px;
     }
@@ -728,12 +733,26 @@ label{
     }
 }
 
-@media screen and (max-width:379px){
+@media  screen and (max-width:437px){
+    .contacto img{
+        width: 380px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width:386px){
     .contacto div h2{
         font-size: 12px;
     }
     .contacto div p{
-        font-size: 10px;
-    }    
+        font-size: 8px;
+    }
+    .contacto div a{
+        font-size: 7px;
+    }
+    .contacto img{
+        width: 300px;
+        height: 130px;
+    }
 }
 
