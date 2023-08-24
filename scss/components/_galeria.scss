@@ -20,6 +20,8 @@
         grid-auto-rows: 250px;
         gap: 15px;
         .grid-item{
+            position: relative;
+            
             img{
                 width: 100%;
                 height: 100%;
