@@ -328,54 +328,13 @@ footer {
     border-radius: 7px;
     padding: 3px; }
 
-/*!---- GALERIA ----*/
-/**-- formulario -- **/
-.habitaciones {
-  text-align: center;
-  background-color: white;
-  justify-content: space-around;
+.mapa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   align-items: center;
-  padding: 20px; }
-  .habitaciones h2 {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    margin-top: 20px; }
-  .habitaciones .producto-contenedor {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    .habitaciones .producto-contenedor div {
-      border: 1px solid black;
-      width: 250px;
-      height: 350px;
-      text-align: center;
-      background-color: black;
-      color: white;
-      margin: 20px; }
-      .habitaciones .producto-contenedor div:hover {
-        transform: scale(1.1);
-        transition: 1s;
-        box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43); }
-      .habitaciones .producto-contenedor div img {
-        width: 250px;
-        height: 200px; }
-      .habitaciones .producto-contenedor div h3 {
-        margin-top: 30px;
-        margin-bottom: 40px;
-        font-size: 22px;
-        color: white; }
-      .habitaciones .producto-contenedor div a {
-        color: white;
-        background-color: rgba(99, 255, 47, 0.666);
-        font-size: 18px;
-        font-weight: 700;
-        border-radius: 7px;
-        padding: 5px; }
+  border: 2px solid grey;
+  margin-bottom: 10px; }
 
 .form-main {
   display: flex;
@@ -456,14 +415,6 @@ footer {
         margin: 0;
         padding: 1rem; }
 
-.mapa {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid grey;
-  margin-bottom: 10px; }
-
 .galeria h2 {
   text-align: center;
   color: black;
@@ -484,127 +435,27 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
   gap: 15px; }
-  .galeria .grid-galeria .grid-item img-1 img {
+  .galeria .grid-galeria .grid-item img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-1 h3 {
+  .galeria .grid-galeria .grid-item h3 {
     position: absolute;
     bottom: 0;
     color: white;
     background-color: rgba(99, 255, 47, 0.596);
     width: 100%;
     text-align: center; }
-  .galeria .grid-galeria .grid-item img-2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-2 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-3 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-4 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-4 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-5 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-5 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-6 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-6 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-7 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-7 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-8 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-8 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-9 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-9 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-11 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-11 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
-  .galeria .grid-galeria .grid-item img-10 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .galeria .grid-galeria .grid-item img-10 h3 {
-    position: absolute;
-    bottom: 0;
-    color: white;
-    background-color: rgba(99, 255, 47, 0.596);
-    width: 100%;
-    text-align: center; }
+  .galeria .grid-galeria .img-1 {
+    grid-row: span 2; }
+  .galeria .grid-galeria .img-4 {
+    grid-row: span; }
+  .galeria .grid-galeria .img-8 {
+    grid-row: span 2; }
+  .galeria .grid-galeria .img-9 {
+    grid-column: span; }
+  .galeria .grid-galeria .img-10 {
+    grid-column: span 3; }
 
 /*!---- MEDIA Q----*/
 @media screen and (max-width: 1196px) {
