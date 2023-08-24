@@ -13,9 +13,9 @@ $font-size:
 
 /* Mapas */
 $boton:(
-    bg-boton:red,
-    border-boton:2px solid blue,
-    color-text:white,
+    bg-boton:$color-terciario,
+    border-boton: 1px solid $color-primario,
+    color-text:$color-secundario,
 );
 
 

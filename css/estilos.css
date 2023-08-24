@@ -336,6 +336,7 @@ footer {
   border: 2px solid grey;
   margin-bottom: 10px; }
 
+/**--Formulario--**/
 .form-main {
   display: flex;
   justify-content: center;
@@ -359,61 +360,58 @@ footer {
     margin: 20px;
     border-top: 20px;
     color: grey; }
-    .form-main .formulario-contenedor .forulario {
+    .form-main .formulario-contenedor .formulario {
+      text-align: center;
       background-color: white;
       border: solid 1px grey;
       border-radius: 5px;
       box-shadow: 0 0 20px 0 rgba(99, 255, 47, 0.666);
-      padding: 1em; }
-    .form-main .formulario-contenedor form {
-      display: flex;
-      margin: 0;
-      padding: 1em; }
-    .form-main .formulario-contenedor label {
-      display: flex;
-      justify-content: space-between;
-      border: none;
-      background: none;
-      outline: none; }
-    .form-main .formulario-contenedor input {
-      align-items: center;
-      align-items: center;
-      border: none;
-      background: none;
-      border-bottom: 1px solid rgba(99, 255, 47, 0.666);
-      outline: none; }
-    .form-main .formulario-contenedor h3 {
-      font-size: 16px; }
-    .form-main .formulario-contenedor .btform {
-      background: rgba(99, 255, 47, 0.666);
-      border: 1px solid grey;
-      text-transform: uppercase;
-      margin: 5px;
-      border-radius: 3px;
-      transition: 1s;
-      cursor: pointer; }
-      .form-main .formulario-contenedor .btform:hover {
-        color: white; }
-    .form-main .formulario-contenedor .contac-info {
-      background-color: rgba(99, 255, 47, 0.666);
-      border-radius: 4px;
-      border: 1px solid grey; }
-      .form-main .formulario-contenedor .contac-info h4 {
-        text-align: center;
-        color: black;
-        padding: 1rem;
-        font-size: 1em; }
-      .form-main .formulario-contenedor .contac-info ul {
-        text-align: center;
-        padding: 1rem; }
-        .form-main .formulario-contenedor .contac-info ul li {
-          padding: .2em; }
-          .form-main .formulario-contenedor .contac-info ul li i {
-            color: white; }
-      .form-main .formulario-contenedor .contac-info p {
-        text-align: center;
-        margin: 0;
-        padding: 1rem; }
+      padding: 1em;
+      margin: 0; }
+      .form-main .formulario-contenedor .formulario div label {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        background: none;
+        outline: none; }
+      .form-main .formulario-contenedor .formulario div input {
+        align-items: center;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgba(99, 255, 47, 0.666);
+        outline: none; }
+      .form-main .formulario-contenedor .formulario div h3 {
+        font-size: 16px; }
+      .form-main .formulario-contenedor .formulario div .btform {
+        background: rgba(99, 255, 47, 0.666);
+        border: 1px solid grey;
+        text-transform: uppercase;
+        margin: 5px;
+        border-radius: 3px;
+        transition: 1s;
+        cursor: pointer; }
+        .form-main .formulario-contenedor .formulario div .btform:hover {
+          color: white; }
+      .form-main .formulario-contenedor .formulario div .contac-info {
+        background-color: rgba(99, 255, 47, 0.666);
+        border-radius: 4px;
+        border: 1px solid grey; }
+        .form-main .formulario-contenedor .formulario div .contac-info h4 {
+          text-align: center;
+          color: black;
+          padding: 1rem;
+          font-size: 1em; }
+        .form-main .formulario-contenedor .formulario div .contac-info ul {
+          text-align: center;
+          padding: 1rem; }
+          .form-main .formulario-contenedor .formulario div .contac-info ul li {
+            padding: .2em; }
+            .form-main .formulario-contenedor .formulario div .contac-info ul li i {
+              color: white; }
+        .form-main .formulario-contenedor .formulario div .contac-info p {
+          text-align: center;
+          margin: 0;
+          padding: 1rem; }
 
 .galeria h2 {
   text-align: center;

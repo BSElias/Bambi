@@ -1,3 +1,4 @@
+/**--Formulario--**/
 
 .form-main{
     display: flex;
@@ -24,74 +25,72 @@
         margin: 20px;
         border-top: 20px;
         color: grey;
-        .forulario{
+        .formulario{
+            text-align: center;
             background-color: white;
             border: solid 1px grey;
             border-radius: 5px;
             box-shadow: 0 0 20px 0  rgba(99, 255, 47, 0.666);
             padding: 1em;
-        }
-        form{
-            display:flex;
             margin: 0;
-            padding: 1em;
-        }
-        label{
-            display:flex;
-            justify-content: space-between;
-            border: none;
-            background: none;
-            outline: none;
-        }
-        input{
-            align-items: center;
-            align-items: center;
-            border: none;
-            background: none;
-            border-bottom: 1px solid rgba(99, 255, 47, 0.666);
-            outline: none;
-        }
-        h3{
-            font-size: 16px;
-        }
-        .btform{
-            background: rgba(99, 255, 47, 0.666);
-            border: 1px solid grey;
-            text-transform: uppercase;
-            margin: 5px;
-            border-radius: 3px;
-            transition: 1s;
-            cursor: pointer;
-            &:hover{
-                color: white;
-            }
-        }
-        .contac-info{
-            background-color: rgba(99, 255, 47, 0.666);
-            border-radius: 4px;
-            border: 1px solid grey;
-            h4{
-                text-align: center;
-                color: black;
-                padding: 1rem;
-                font-size: 1em;
-            }
-            ul{
-                text-align: center;
-                padding: 1rem;
-                li{
-                    padding: .2em;
-                    i{
-                        color:white;
+            div{
+                label{
+                    display:flex;
+                    justify-content: space-between;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+                input{
+                    align-items: center;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid rgba(99, 255, 47, 0.666);
+                    outline: none;
+                }
+                h3{
+                    font-size: 16px;
+                }
+                .btform{
+                    background: rgba(99, 255, 47, 0.666);
+                    border: 1px solid grey;
+                    text-transform: uppercase;
+                    margin: 5px;
+                    border-radius: 3px;
+                    transition: 1s;
+                    cursor: pointer;
+                    &:hover{
+                        color: white;
                     }
                 }
-            }
-            p{
-                text-align: center;
-                margin: 0;
-                padding: 1rem;
+                .contac-info{
+                    background-color: rgba(99, 255, 47, 0.666);
+                    border-radius: 4px;
+                    border: 1px solid grey;
+                    h4{
+                        text-align: center;
+                        color: black;
+                        padding: 1rem;
+                        font-size: 1em;
+                    }
+                    ul{
+                        text-align: center;
+                        padding: 1rem;
+                        li{
+                            padding:.2em;
+                            i{
+                                color: white;
+                            }
+                        }
+                    }
+                    p{
+                        text-align: center;
+                        margin: 0;
+                        padding: 1rem;
+                    }
+
+                }
             }
         }
-
     }
 }
