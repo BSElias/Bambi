@@ -23,12 +23,21 @@ header{
 header nav{
     background-color: white;
 }
+.h-color{
+    transition: 1s;
+}
+.h-color:hover{
+    transform: scale(1.1);
+    color:rgba(99, 255, 47, 0.666);
+}
 .boton-nav{
-    border: 1px solid black;  
+    border: 1px solid black;
+    transition: 1s;
 }
 .boton-nav:hover{
     background-color: rgba(99, 255, 47, 0.666);
     color: white;
+    border: 1px solid grey;
 }
 .logo{
     width: 80px;
@@ -38,7 +47,7 @@ header nav{
 /*!---- MAIN ----*/
 /**-- titulo prin img-- **/
 .hero{
-    background-image: url(../img/hotel.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.145),rgba(0, 0, 0, 0.416)),url(../img/hotel.jpg);
     background-color:white;
     background-size: cover;
     background-position: center;
@@ -141,6 +150,10 @@ header nav{
     background-color: black;
     color:white;
     margin: 20px;
+}
+.habitaciones div div:hover{
+    transform: scale(1.1);
+    transition: 1s;
     box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
     -moz-box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
@@ -203,6 +216,7 @@ header nav{
     font-weight: 700;
     border-radius: 7px;
     padding:3px; 
+    border: 1px solid grey;
 }
 .descuentos img{
     width: 250px;
@@ -225,7 +239,7 @@ header nav{
 }
 
 .destino{
-    background-image: url(../img/fondo.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.287),rgba(0, 0, 0, 0.162)),url(../img/fondo.jpg);
     background-color:white;
     background-size:cover;
     background-position: center;
@@ -316,7 +330,7 @@ header nav{
 }
 /**-- Nosotros--**/
 .nosotros{
-    background-image: url(../img/HotelPie.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.177),rgba(0, 0, 0, 0.223)),url(../img/HotelPie.jpg);
     background-color:white;
     background-size: cover;
     background-position: center;
@@ -343,6 +357,7 @@ header nav{
 .nosotros a{
     color:white;
     background-color: rgba(99, 255, 47, 0.666);
+    border: 1px solid white;
     font-size: 18px;
     font-weight: 700;
     border-radius: 7px;
@@ -411,14 +426,6 @@ header nav{
 footer{
     background-color: black;
 }
-footer i{
-    font-size: 35px;
-    margin: 15px;
-    color:white;
-}
-footer i:hover{
-    color: rgba(99, 255, 47, 0.666);
-}
 footer .footer-contenedor{
     display: flex;
     justify-content: space-around;
@@ -434,39 +441,125 @@ footer img{
     width: 60px;
     border-radius: 30px;
 }
+footer i{
+    font-size: 35px;
+    margin: 15px;
+    color:white;
+    transition: 1s;
+}
+footer i:hover{
+    font-size: 38px;
+    color: rgba(99, 255, 47, 0.666);
+}
 
 /**-- formulario -- **/
 
-.formulario-contenedor{
-    width: auto;
-    display: flex;
-    margin: 20px;
-    border-top: 20px;
-}
-input{
-    display: flex;
-    align-items: center;
-}
-label{
-    display: flex;
-    justify-content: space-between;
-}
 .form-main{
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    padding: 0 1.5em;
+}
+.form-main h2{
+    text-align:center;
+    color:white;
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    transition: 1s;
+}
+.form-main h2:hover{
+    color: rgba(99, 255, 47, 0.666);
+}
+.formulario-contenedor{
+    width: 100%;
+    display:flex;
+    margin-left: 100px;
+    margin: 20px;
+    border-top: 20px;
+    color: grey;
 }
 .formulario{
-    background-color: grey;
-    border: solid 2px black; 
+    background-color: white;
+    border: solid 1px grey;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0  rgba(99, 255, 47, 0.666);
+    padding: 1em;
+}
+.formulario form{
+    display:flex;
+    margin: 0;
+    padding: 1em;
+}
+.formulario div h3{
+    font-size: 16px;
+}
+input{
+    align-items: center;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(99, 255, 47, 0.666);
+    outline: none;
+}
+label{
+    display:flex;
+    justify-content: space-between;
+    border: none;
+    background: none;
+    outline: none;
+}
+.btform{
+    background: rgba(99, 255, 47, 0.666);
+    border: 1px solid grey;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 3px;
+    transition: 1s;
+    cursor: pointer;
+}
+.btform:hover{
+    color: white;
+}
+.contac-info{
+    background-color: rgba(99, 255, 47, 0.666);
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+.contac-info h4{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    font-size: 1em;
+}
+.contac-info ul{
+    text-align: center;
+    padding: 1rem;
+}
+.contac-info ul li{
+    padding: .2em;
+}
+.contac-info ul li i{
+    color:white;
+}
+.contac-info p{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
 }
 .mapa{
     display: flex;
-    border: solid 2px black;
-    max-width: 310px;
-    margin-left: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
     margin-bottom: 10px;
+}
+
+/**-- Botones -- **/
+.bt:hover{
+    transform: scale(1.1);
 }
 
 /*!---- MEDIA Q----*/
@@ -561,8 +654,6 @@ label{
     }
 }
 
-
-
 @media screen and (max-width:950px){
     
     .grid-galeria{
@@ -623,7 +714,7 @@ label{
     }
     .interesado p{
         font-size: 18px;
-    
+    }
     .acoso{
         display: none;
     }
@@ -738,7 +829,6 @@ label{
         height: 180px;
     }
 }
-
 
 @media screen and (max-width:470px){
     .hero h1{

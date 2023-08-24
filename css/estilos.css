@@ -1,0 +1,807 @@
+/* Listas */
+/* Mapas */
+/*!----RESET----*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*!----TIPOGRAFIA----*/
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10; }
+
+header nav {
+  background-color: white; }
+
+.h-color {
+  transition: 1s; }
+
+.h-color:hover {
+  transform: scale(1.1);
+  color: rgba(99, 255, 47, 0.666); }
+
+.boton-nav {
+  border: 1px solid black;
+  transition: 1s; }
+
+.boton-nav:hover {
+  background-color: rgba(99, 255, 47, 0.666);
+  color: white;
+  border: 1px solid grey; }
+
+.logo {
+  width: 80px;
+  height: 80px; }
+
+footer {
+  background-color: black; }
+  footer .footer-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; }
+    footer .footer-contenedor a img {
+      width: 60px;
+      border-radius: 30px; }
+    footer .footer-contenedor h2 {
+      font-size: 40px;
+      color: white; }
+    footer .footer-contenedor div a i {
+      font-size: 35px;
+      margin: 15px;
+      color: white;
+      transition: 1s; }
+      footer .footer-contenedor div a i:hover {
+        font-size: 38px;
+        color: rgba(99, 255, 47, 0.666); }
+
+/**-- titulo prin img-- **/
+.hero {
+  background: linear-gradient(rgba(255, 255, 255, 0.145), rgba(0, 0, 0, 0.416)), url(../img/hotel.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero img {
+    width: 500px;
+    height: 600px; }
+  .hero h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    margin-bottom: 40px; }
+  .hero p {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px; }
+  .hero a {
+    border: 2px solid white;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.666);
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 40px; }
+
+/**-- contacto-- **/
+.contacto {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px; }
+  .contacto div {
+    width: 50%;
+    text-align: center;
+    margin: 50px; }
+    .contacto div h2 {
+      font-size: 45px;
+      color: black; }
+    .contacto div p {
+      font-size: 18px;
+      color: grey; }
+    .contacto div a {
+      border: 2px solid grey;
+      font-size: 18px;
+      color: white;
+      background-color: rgba(99, 255, 47, 0.666);
+      padding: 6px;
+      border-radius: 7px;
+      margin: 20px; }
+  .contacto img {
+    width: 850px;
+    height: 500px; }
+
+/**-- habitaciones img h2 h3 img - **/
+.habitaciones {
+  text-align: center;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  .habitaciones h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: 20px; }
+  .habitaciones .producto-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .habitaciones .producto-contenedor div {
+      border: 1px solid black;
+      width: 250px;
+      height: 350px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 20px; }
+      .habitaciones .producto-contenedor div:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43); }
+      .habitaciones .producto-contenedor div img {
+        width: 250px;
+        height: 200px; }
+      .habitaciones .producto-contenedor div h3 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 22px;
+        color: white; }
+      .habitaciones .producto-contenedor div a {
+        color: white;
+        background-color: rgba(99, 255, 47, 0.666);
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 7px;
+        padding: 5px; }
+
+/**-- descuentos img h2 h3 p img - **/
+.descuentos {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 50px; }
+  .descuentos div {
+    width: 50%;
+    text-align: center; }
+    .descuentos div h2 {
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      margin-top: 20px; }
+    .descuentos div h3 {
+      text-align: center;
+      font-size: 40px;
+      color: black;
+      padding: 20px;
+      margin-top: 10px; }
+    .descuentos div p {
+      font-size: 25px;
+      color: grey; }
+    .descuentos div a {
+      color: white;
+      background-color: rgba(99, 255, 47, 0.666);
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 7px;
+      padding: 3px;
+      border: 1px solid grey; }
+  .descuentos img {
+    width: 250px;
+    height: 230px; }
+
+/**-- destino h2 p img - **/
+.destino {
+  background: linear-gradient(rgba(255, 255, 255, 0.287), rgba(0, 0, 0, 0.162)), url(../img/fondo.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .destino div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+  .destino img {
+    margin: 30px;
+    width: 200px;
+    height: 200px; }
+  .destino h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    padding: 15px;
+    width: 100%; }
+  .destino p {
+    font-size: 20px;
+    color: white; }
+
+/**--Porque--**/
+.porque h2 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%; }
+
+.porque p {
+  text-align: center;
+  color: grey;
+  font-size: 35px; }
+
+/**--Carrusel--**/
+.carrusel div img {
+  width: 400px;
+  height: 550px; }
+
+.carrusel h5 {
+  font-size: 30px;
+  color: white; }
+
+.carrusel p {
+  font-size: 20px;
+  color: white; }
+
+/**--Inte--**/
+.interesado h2 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%; }
+
+.interesado p {
+  text-align: center;
+  color: grey;
+  font-size: 35px; }
+
+/**-- whats--**/
+.acoso {
+  position: fixed;
+  bottom: 70px;
+  right: 50px; }
+  .acoso a img {
+    width: 50px; }
+
+/**-- Nosotros--**/
+.nosotros {
+  background: linear-gradient(rgba(255, 255, 255, 0.177), rgba(0, 0, 0, 0.223)), url(../img/HotelPie.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nosotros h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%; }
+  .nosotros p {
+    text-align: center;
+    color: white;
+    font-size: 20px; }
+  .nosotros a {
+    color: white;
+    background-color: rgba(99, 255, 47, 0.666);
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 3px; }
+
+/*!---- GALERIA ----*/
+/**-- formulario -- **/
+.habitaciones {
+  text-align: center;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  .habitaciones h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: 20px; }
+  .habitaciones .producto-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .habitaciones .producto-contenedor div {
+      border: 1px solid black;
+      width: 250px;
+      height: 350px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 20px; }
+      .habitaciones .producto-contenedor div:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43); }
+      .habitaciones .producto-contenedor div img {
+        width: 250px;
+        height: 200px; }
+      .habitaciones .producto-contenedor div h3 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 22px;
+        color: white; }
+      .habitaciones .producto-contenedor div a {
+        color: white;
+        background-color: rgba(99, 255, 47, 0.666);
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 7px;
+        padding: 5px; }
+
+.form-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  padding: 0 1.5em; }
+  .form-main h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    transition: 1s; }
+    .form-main h2:hover {
+      color: rgba(99, 255, 47, 0.666); }
+  .form-main .formulario-contenedor {
+    width: 100%;
+    display: flex;
+    margin-left: 100px;
+    margin: 20px;
+    border-top: 20px;
+    color: grey; }
+    .form-main .formulario-contenedor .forulario {
+      background-color: white;
+      border: solid 1px grey;
+      border-radius: 5px;
+      box-shadow: 0 0 20px 0 rgba(99, 255, 47, 0.666);
+      padding: 1em; }
+    .form-main .formulario-contenedor form {
+      display: flex;
+      margin: 0;
+      padding: 1em; }
+    .form-main .formulario-contenedor label {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      background: none;
+      outline: none; }
+    .form-main .formulario-contenedor input {
+      align-items: center;
+      align-items: center;
+      border: none;
+      background: none;
+      border-bottom: 1px solid rgba(99, 255, 47, 0.666);
+      outline: none; }
+    .form-main .formulario-contenedor h3 {
+      font-size: 16px; }
+    .form-main .formulario-contenedor .contac-info {
+      background-color: rgba(99, 255, 47, 0.666);
+      border-radius: 4px;
+      border: 1px solid grey; }
+      .form-main .formulario-contenedor .contac-info h4 {
+        text-align: center;
+        color: black;
+        padding: 1rem;
+        font-size: 1em; }
+      .form-main .formulario-contenedor .contac-info ul {
+        text-align: center;
+        padding: 1rem; }
+        .form-main .formulario-contenedor .contac-info ul li {
+          padding: .2em; }
+          .form-main .formulario-contenedor .contac-info ul li i {
+            color: white; }
+      .form-main .formulario-contenedor .contac-info p {
+        text-align: center;
+        margin: 0;
+        padding: 1rem; }
+
+.galeria h2 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%; }
+
+.galeria p {
+  text-align: center;
+  color: grey;
+  font-size: 35px; }
+
+.galeria .grid-galeria {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  .galeria .grid-galeria .grid-item img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-1 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-2 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-3 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-4 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-5 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-6 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-7 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-8 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-9 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-11 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+  .galeria .grid-galeria .grid-item img-10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item img-10 h3 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.596);
+    width: 100%;
+    text-align: center; }
+
+/*!---- MEDIA Q----*/
+@media screen and (max-width: 1196px) {
+  .hero h1 {
+    font-size: 55px; }
+  .hero p {
+    font-size: 22px; }
+  .hero img {
+    width: 480px;
+    height: 580px; }
+  .hero a {
+    font-size: 20px; }
+  .contacto div h2 {
+    font-size: 38px; }
+  .contacto div p {
+    font-size: 15px; }
+  .contacto div a {
+    font-size: 13px; } }
+
+@media screen and (max-width: 1144px) {
+  .contacto div h2 {
+    font-size: 30px; }
+  .contacto div p {
+    font-size: 12px; }
+  .contacto div a {
+    font-size: 9px; }
+  .contacto img {
+    width: 750px;
+    height: 460px; } }
+
+@media screen and (max-width: 1083px) {
+  .contacto div h2 {
+    font-size: 30px; }
+  .contacto div p {
+    font-size: 10px; }
+  .contacto div a {
+    font-size: 9px; }
+  .contacto img {
+    width: 700px;
+    height: 410px; } }
+
+@media screen and (max-width: 1008px) {
+  .contacto div h2 {
+    font-size: 25px; }
+  .contacto div p {
+    font-size: 9px; }
+  .contacto div a {
+    font-size: 9px; }
+  .contacto img {
+    width: 650px;
+    height: 350px; }
+  .porque h2 {
+    font-size: 30px; }
+  .porque p {
+    font-size: 20px; }
+  .interesado h2 {
+    font-size: 30px; }
+  .interesado p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 950px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1 fr);
+    grid-auto-rows: 220px; }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .img-10 {
+    grid-column: span 3; } }
+
+@media screen and (max-widht: 918px) {
+  .contacto {
+    flex-direction: column; }
+  .contacto img {
+    width: 500px;
+    height: 300px; } }
+
+@media screen and (max-width: 895px) {
+  .hero h1 {
+    font-size: 50px; }
+  .hero p {
+    font-size: 18px; }
+  .contacto {
+    flex-direction: column; }
+  .contacto div {
+    width: 45%;
+    text-align: center; }
+  .contacto div h2 {
+    font-size: 30px; }
+  .contacto div p {
+    font-size: 15px; }
+  .contacto img {
+    width: 670px;
+    height: 340px; }
+  .porque h2 {
+    font-size: 25px; }
+  .porque p {
+    font-size: 18px; }
+  .interesado h2 {
+    font-size: 25px; }
+  .interesado p {
+    font-size: 18px; }
+  .acoso {
+    display: none; } }
+
+@media screen and (max-width: 715px) {
+  .contacto div h2 {
+    font-size: 28px; }
+  .contacto div p {
+    font-size: 12px; }
+  .contacto img {
+    width: 590px;
+    height: 300px; } }
+
+@media screen and (max-width: 650px) {
+  header {
+    flex-direction: column;
+    position: static; }
+  .hero h1 {
+    font-size: 45px; }
+  .hero p {
+    font-size: 16px; }
+  .contacto img {
+    width: 570px;
+    height: 270px; }
+  .descuentos {
+    flex-direction: column;
+    padding: 30px; }
+  .descuentos div {
+    width: 50%;
+    text-align: center; }
+  .descuentos h2 {
+    text-align: center; }
+  .descuentos h3 {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    margin-top: 10px; }
+  .descuentos p {
+    font-size: 20px; }
+  .descuentos img {
+    margin: 15px;
+    width: 220px;
+    height: 200px; }
+  .porque h2 {
+    font-size: 20px; }
+  .porque p {
+    font-size: 15px; }
+  .interesado h2 {
+    font-size: 20px; }
+  .interesado p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 570px) {
+  header {
+    flex-direction: row; }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  header nav ul li {
+    margin: 3px; }
+  .hero h1 {
+    padding: 15px;
+    font-size: 35px; }
+  .hero p {
+    font-size: 13px; }
+  .contacto div h2 {
+    font-size: 25px; }
+  .contacto div p {
+    font-size: 15px; }
+  .contacto img {
+    width: 450px;
+    height: 200px; }
+  .descuentos h3 {
+    font-size: 30px; }
+  .descuentos p {
+    font-size: 18px; }
+  .descuentos img {
+    margin: 15px;
+    width: 200px;
+    height: 180px; } }
+
+@media screen and (max-width: 470px) {
+  .hero h1 {
+    font-size: 28px; }
+  .contacto div {
+    width: 55%;
+    margin: 10px; }
+  .contcto div h2 {
+    font-size: 18px; }
+  .contacto div p {
+    font-size: 12px; }
+  .contacto img {
+    width: 430px;
+    height: 180px; }
+  .grid-galeria {
+    grid-template-columns: 1fr; }
+  .grid-item {
+    grid-column: span 1; }
+  footer div {
+    flex-direction: column; } }
+
+@media screen and (max-width: 437px) {
+  .contacto img {
+    width: 380px;
+    height: 130px; } }
+
+@media screen and (max-width: 386px) {
+  .contacto div h2 {
+    font-size: 12px; }
+  .contacto div p {
+    font-size: 8px; }
+  .contacto div a {
+    font-size: 7px; }
+  .contacto img {
+    width: 300px;
+    height: 130px; } }

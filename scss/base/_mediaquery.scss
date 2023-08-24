@@ -1,0 +1,320 @@
+/*!---- MEDIA Q----*/
+@media screen and (max-width:1196px) {
+    .hero h1{
+        font-size: 55px; 
+
+    }      
+    
+    .hero p{
+        font-size: 22px;
+
+    }
+    .hero img{
+        width: 480px;
+        height: 580px;
+    }
+    .hero a{
+        font-size: 20px;
+    }
+    .contacto div h2{
+        font-size: 38px;
+    }
+    .contacto div p{
+        font-size: 15px;
+    }
+    .contacto div a{
+        font-size: 13px;
+    }
+
+    
+}
+
+@media screen and (max-width:1144px){
+    .contacto div h2{
+        font-size: 30px;
+    }
+    .contacto div p{
+        font-size: 12px;
+    }
+    .contacto div a{
+        font-size: 9px;
+    }
+    .contacto img{
+        width: 750px;
+        height: 460px;
+    }
+
+}
+
+@media screen and (max-width:1083px){
+    .contacto div h2{
+        font-size: 30px;
+    }
+    .contacto div p{
+        font-size: 10px;
+    }
+    .contacto div a{
+        font-size: 9px;
+    }
+    .contacto img{
+        width: 700px;
+        height: 410px;
+    }
+}
+
+@media screen and (max-width:1008px){
+    .contacto div h2{
+        font-size: 25px;
+    }
+    .contacto div p{
+        font-size: 9px;
+    }
+    .contacto div a{
+        font-size: 9px;
+    }
+    .contacto img{
+        width: 650px;
+        height: 350px;
+    }
+    .porque h2{
+        font-size: 30px; 
+    }
+    .porque p{
+        font-size: 20px;
+    }
+    .interesado h2{
+        font-size: 30px;
+    }
+    .interesado p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:950px){
+    
+    .grid-galeria{
+        grid-template-columns: repeat(2, 1 fr);
+        grid-auto-rows: 220px;
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .img-10{
+        grid-column: span 3;
+    }
+}
+
+@media screen and (max-widht:918px){
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 895px){
+    .hero h1{
+        font-size: 50px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto div{
+        width: 45%;
+        text-align: center;
+    }
+    .contacto div h2{
+        font-size: 30px;
+    }
+    .contacto div p{
+        font-size: 15px;
+    }
+    .contacto img{
+        width: 670px;
+        height: 340px;
+    }
+    .porque h2{
+        font-size: 25px; 
+    }
+    .porque p{
+        font-size: 18px;
+    }
+    .interesado h2{
+        font-size: 25px;
+    }
+    .interesado p{
+        font-size: 18px;
+    }    
+    .acoso{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 715px){
+    .contacto div h2{
+        font-size: 28px;
+    }
+    .contacto div p{
+        font-size: 12px;
+    }
+    .contacto img{
+        width: 590px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    header{
+        flex-direction: column;
+        position: static;
+    }
+    .hero h1{
+        font-size: 45px;
+        
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .contacto img{
+        width: 570px;
+        height: 270px;
+    }
+    .descuentos{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .descuentos div{
+        width: 50%;
+        text-align:center
+    }
+    .descuentos h2{
+        text-align: center;
+    }
+    .descuentos h3{
+        text-align: center;
+        font-size: 35px;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .descuentos p{
+        font-size: 20px;
+    }
+    .descuentos img{
+        margin:15px;
+        width: 220px;
+        height: 200px;
+    }
+    .porque h2{
+        font-size: 20px; 
+    }
+    .porque p{
+        font-size: 15px;
+    }
+    .interesado h2{
+        font-size: 20px;
+    }
+    .interesado p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    header{
+        flex-direction: row;
+    }
+    header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul li{
+        margin: 3px;
+    }
+    .hero h1{
+        padding: 15px;
+        font-size: 35px;
+    }
+    .hero p{
+        font-size: 13px;
+    }
+    .contacto div h2{
+        font-size: 25px;
+    }
+    .contacto div p{
+        font-size: 15px;
+    }
+    .contacto img{
+        width: 450px;
+        height: 200px;
+    }
+    .descuentos h3{
+        font-size: 30px;
+    }
+    .descuentos p{
+        font-size: 18px;
+    }
+    .descuentos img{
+        margin:15px;
+        width: 200px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width:470px){
+    .hero h1{
+        font-size: 28px;
+    }
+    .contacto div{
+        width: 55%;
+        margin: 10px;
+    }
+    .contcto div h2{
+        font-size: 18px;
+    }
+    .contacto div p{
+        font-size: 12px;
+    }
+    .contacto img{
+        width: 430px;
+        height: 180px;
+    }
+
+    .grid-galeria{
+        grid-template-columns: 1fr;
+    }
+    .grid-item{
+        grid-column: span 1;
+    }
+    footer div{
+        flex-direction: column;
+    }
+}
+
+@media  screen and (max-width:437px){
+    .contacto img{
+        width: 380px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width:386px){
+    .contacto div h2{
+        font-size: 12px;
+    }
+    .contacto div p{
+        font-size: 8px;
+    }
+    .contacto div a{
+        font-size: 7px;
+    }
+    .contacto img{
+        width: 300px;
+        height: 130px;
+    }
+}
+

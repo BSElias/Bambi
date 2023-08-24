@@ -1,0 +1,36 @@
+footer{
+    background-color: $color-primario;
+    .footer-contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: wrap;
+        a{
+            img{
+                width: 60px;
+                border-radius: 30px;
+            }
+
+        }
+        h2{
+            font-size: 40px;
+            color: $color-secundario;
+
+        }
+        div{
+            a{
+                i{
+                    font-size: 35px;
+                    margin: 15px;
+                    color:white;
+                    transition: 1s;
+                    &:hover{
+                        font-size: 38px;
+                        color: $color-terciario;
+                    }
+                }
+            }
+        }
+    }
+}
