@@ -54,6 +54,18 @@
         h3{
             font-size: 16px;
         }
+        .btform{
+            background: rgba(99, 255, 47, 0.666);
+            border: 1px solid grey;
+            text-transform: uppercase;
+            margin: 5px;
+            border-radius: 3px;
+            transition: 1s;
+            cursor: pointer;
+            &:hover{
+                color: white;
+            }
+        }
         .contac-info{
             background-color: rgba(99, 255, 47, 0.666);
             border-radius: 4px;
@@ -82,4 +94,12 @@
         }
 
     }
+}
+.mapa{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    margin-bottom: ;
 }

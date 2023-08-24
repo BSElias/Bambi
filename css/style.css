@@ -448,7 +448,7 @@ footer i{
     transition: 1s;
 }
 footer i:hover{
-    font-size: 38px;
+    
     color: rgba(99, 255, 47, 0.666);
 }
 

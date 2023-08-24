@@ -1,7 +1,7 @@
 .galeria{
     h2{
-        text-align:center;
-        color:black;
+        text-align: center;
+        color: black;
         font-size: 50px;
         margin-top: 20px;
         padding: 15px;
@@ -16,11 +16,10 @@
         width: 100%;
         margin-top: 30px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 250px;
         gap: 15px;
-        
-        .grid-item img-1{
+        .grid-item{
             img{
                 width: 100%;
                 height: 100%;
@@ -35,162 +34,20 @@
                 text-align: center;
             }
         }
-        .grid-item img-2{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }
+        .img-1{
+            grid-row: span 2;
         }
-        .grid-item img-3{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }           
+        .img-4{
+            grid-row: span;
         }
-        .grid-item img-4{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }
+        .img-8{
+            grid-row: span 2;
         }
-        .grid-item img-5{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }
+        .img-9{
+            grid-column: span;
         }
-        .grid-item img-6{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }
+        .img-10{
+            grid-column: span 3;
         }
-        .grid-item img-7{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }
-        }
-        .grid-item img-8{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            } 
-        }
-        .grid-item img-9{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-            }
-            
-        }
-        .grid-item img-11{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-
-            }
-            
-        }
-        .grid-item img-10{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
-            }
-            h3{
-                position: absolute;
-                bottom: 0;
-                color: white;
-                background-color: rgba(99, 255, 47, 0.596);
-                width: 100%;
-                text-align: center;
-
-            }
-            
-        }
-
     }
 }

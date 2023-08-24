@@ -425,6 +425,16 @@ footer {
       outline: none; }
     .form-main .formulario-contenedor h3 {
       font-size: 16px; }
+    .form-main .formulario-contenedor .btform {
+      background: rgba(99, 255, 47, 0.666);
+      border: 1px solid grey;
+      text-transform: uppercase;
+      margin: 5px;
+      border-radius: 3px;
+      transition: 1s;
+      cursor: pointer; }
+      .form-main .formulario-contenedor .btform:hover {
+        color: white; }
     .form-main .formulario-contenedor .contac-info {
       background-color: rgba(99, 255, 47, 0.666);
       border-radius: 4px;
@@ -445,6 +455,14 @@ footer {
         text-align: center;
         margin: 0;
         padding: 1rem; }
+
+.mapa {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  margin-bottom: 10px; }
 
 .galeria h2 {
   text-align: center;
