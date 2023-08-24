@@ -13,13 +13,23 @@ $font-size:
 1px,3px,8px,9px,10px,12px,13px,15px,16px,18px,20px,22px,25px,30px,35px,38px,45px,50px,55px;
 
 /* Mapas */
+
 $boton:(
     bg-boton:$color-terciario,
     border-boton: 2px solid $color-cuarto,
     color-text:$color-secundario,
 );
+$boton2:(
+    bg-boton:$color-terciario,
+    border-boton:2px solid $color-secundario,
+    color-text:$color-secundario,
+);
 
-//* Extend
+.bt:hover{
+    transform: scale(1.1);
+}
+
+/* flex */
 
 %flex{
     display: flex;
@@ -27,9 +37,11 @@ $boton:(
     align-items: center;
 }
 
-//* Mixing
+/* Mixing */
+
 @mixin flex($flex, $justify,$aling){
     display: $flex;
     justify-content: $justify;
     align-items: $aling;
 }
+

@@ -1,6 +1,7 @@
 /**-- titulo prin img-- **/
 
 .hero{
+    @include flex( flex ,center, center);
     background: linear-gradient(rgba(255, 255, 255, 0.145),rgba(0, 0, 0, 0.416)),url(../img/hotel.jpg);
     background-color:$color-secundario;
     background-size: cover;
@@ -8,10 +9,8 @@
     background-attachment: fixed;
     width: 100%;
     height: 90vh;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     img{
         width: 500px;
         height: 600px;
@@ -42,10 +41,8 @@
 /**-- contacto-- **/
 
 .contacto{
+    @include flex( flex, space-evenly, center);
     background-color:$color-secundario;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 50px;
     div{
         width: 50%;
@@ -140,10 +137,8 @@
 /**-- descuentos img h2 h3 p img - **/
 
 .descuentos{
+    @include flex(flex, space-evenly, center);
     background-color:$color-secundario;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: row-reverse;
     padding: 50px;
     div{
@@ -186,16 +181,14 @@
 /**-- destino h2 p img - **/
 
 .destino{
+    @include flex(flex, space-between,center);
     background: linear-gradient(rgba(255, 255, 255, 0.287),rgba(0, 0, 0, 0.162)),url(../img/fondo.jpg);
     background-color:$color-secundario;
     background-size:cover;
     background-position: center;
     width: 100%;
     height: 90vh;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     div{
         display: flex;
         flex-wrap: wrap;
@@ -288,16 +281,14 @@
 /**-- Nosotros--**/
 
 .nosotros{
+    @include flex(flex, center, center);
     background:linear-gradient(rgba(255, 255, 255, 0.177),rgba(0, 0, 0, 0.223)),url(../img/HotelPie.jpg);
     background-color:$color-secundario;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 90vh;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     h2{
         text-align:center;
         color:$color-secundario;
@@ -325,13 +316,13 @@
 /**--Mapa--**/
 
 .mapa{
-    display: flex;
+    @include flex(flex, center, center);
     width: 100%;
-    justify-content: center;
-    align-items: center;
     border: 2px solid $color-cuarto;
     margin-bottom: 10px;
 }
+
+
 
 
 
