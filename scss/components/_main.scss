@@ -57,10 +57,10 @@
         }
         p{
             font-size: 18px;
-            color: grey;
+            color: $color-cuarto;
         }
         a{
-            border: 2px solid grey;
+            border: 2px solid $color-cuarto;
             font-size: 18px;
             color: $color-secundario;
             background-color: $color-terciario;
@@ -79,14 +79,14 @@
 
 .habitaciones{
     text-align: center;
-    background-color:white;
+    background-color:$color-secundario;
     justify-content:space-around;
     align-items: center;
     padding: 20px;
     h2{
         text-align: center;
-        background-color: black;
-        color: white;
+        background-color: $color-primario;
+        color: $color-secundario;
         padding: 15px;
         margin-top: 20px;
 
@@ -97,12 +97,12 @@
         align-items: center;
         flex-wrap: wrap;
         div{
-            border: 1px solid black;
+            border: 1px solid $color-primario;
             width: 250px;
             height: 350px;
             text-align: center;
-            background-color: black;
-            color:white;
+            background-color: $color-primario;
+            color:$color-secundario;
             margin: 20px;
             &:hover{
                 transform: scale(1.1);
@@ -119,15 +119,19 @@
                 margin-top: 30px;
                 margin-bottom: 40px;
                 font-size: 22px;
-                color: white;
+                color: $color-secundario;
             }
             a{
-                color:white;
-                background-color: rgba(99, 255, 47, 0.666);
+                color:$color-secundario;
+                background-color: $color-terciario;
                 font-size: 18px;
                 font-weight: 700;
                 border-radius: 7px;
-                padding: 5px;   
+                padding: 5px;
+                &:hover{
+                    border: 2px solid $color-secundario;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -161,7 +165,7 @@
         }
         p{
             font-size: 25px;
-            color: grey;
+            color: $color-cuarto;
         }
         a{
             color:$color-secundario;
@@ -318,12 +322,14 @@
     }
 }
 
+/**--Mapa--**/
+
 .mapa{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    border: 2px solid grey;
+    border: 2px solid $color-cuarto;
     margin-bottom: 10px;
 }
 

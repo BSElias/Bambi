@@ -4,24 +4,24 @@ header{
     z-index: 10;
 }
 header nav{
-    background-color: white;
+    background-color: $color-secundario;
 }
 .h-color{
     transition: 1s;
 }
 .h-color:hover{
     transform: scale(1.1);
-    color:rgba(99, 255, 47, 0.666);
+    color:$color-terciario;
 }
 .boton-nav{
-    border: 1px solid black;
+    border: 1px solid $color-primario;
     transition: 1s;
 }
 
 .boton-nav:hover{
-    background-color: rgba(99, 255, 47, 0.666);
-    color: white;
-    border: 1px solid grey;
+    background-color: $color-terciario;
+    color: $color-secundario;
+    border: 1px solid $color-cuarto;
 }
 .logo{
     width: 80px;
