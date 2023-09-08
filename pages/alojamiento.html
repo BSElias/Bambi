@@ -68,8 +68,42 @@
         </nav>
     </header>
     <main>
-        <section class=" habitaciones">
-            <h2>Alquiler de Habitaciones</h2>
+        <section class="habitaciones">
+            <h1>Bambi Alojamiento</h1>
+            <div class="mt-5 pb-5">
+                <select class= "form-select-sm" aria-label="Default select example">
+                    <option selected>Cama</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+                <select class= "form-select-sm" aria-label="Default select example">
+                    <option selected>Dormitorios</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+                <select class= "form-select-sm" aria-label="Default select example">
+                    <option selected>Buscar por habitacion</option>
+                    <option value="1">Simple</option>
+                    <option value="2">Doble</option>
+                    <option value="3">Triple</option>
+                    <option value="4">Cuadruple +</option>
+                </select>
+                <br>
+                <br>
+                <label for="customRange2" class="form-label">$200 - $1000</label>
+                <input class="sele" type="range" class="form-range" min="0" max="5" id="customRange2">
+                <button type="button" class="btn btn-outline-secondary"
+                    style="--bs-btn-padding-y: .27rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .80rem;">
+                    Restablecer
+                </button>
+            </div>
+
+            <h2>Tipo de Habitaciones</h2>
+
             <div class="producto-contenedor">
                 <div>
                     <img src="../img/habitacion.jpg" / alt="Habitacion doble">

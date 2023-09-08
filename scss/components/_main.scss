@@ -35,6 +35,7 @@
         padding: 10px;
         border-radius: 7px;
         margin-top: 40px;
+        transition: 1s;
     }
 }
 
@@ -80,13 +81,19 @@
     justify-content:space-around;
     align-items: center;
     padding: 20px;
+    h1{
+        text-align: center;
+        background-color: $color-terciario;
+        color: $color-secundario;
+        padding: 20px;
+        border-radius: 4px;
+    }
     h2{
         text-align: center;
         background-color: $color-primario;
         color: $color-secundario;
         padding: 15px;
         margin-top: 20px;
-
     }
     .producto-contenedor{
         @include flex (flex, space-around, center);
@@ -99,9 +106,9 @@
             background-color: $color-primario;
             color:$color-secundario;
             margin: 20px;
+            transition: 1s;
             &:hover{
                 transform: scale(1.1);
-                transition: 1s;
                 box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
                 -webkit-box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
                 -moz-box-shadow: 10px 10px 5px 0px rgba(99,255,47,0.43);
@@ -176,6 +183,7 @@
         height: 230px;
     }
 }
+
 /**-- destino h2 p img - **/
 
 .destino{
@@ -233,8 +241,8 @@
 /**--Carrusel--**/
 
 .carrusel div img{
-    width: 400px;
-    height: 550px;
+    height: 540px;
+    width: 600px;
 }
 .carrusel h5{
     font-size: 30px;
@@ -319,6 +327,8 @@
     border: 2px solid $color-cuarto;
     margin-bottom: 10px;
 }
+
+
 
 
 

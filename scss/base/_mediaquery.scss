@@ -25,23 +25,45 @@
     .contacto div a{
         font-size: 13px;
     }
-
-    
+    .promociones h1{
+        font-size: 37px;
+    }
+    .promociones h2{
+        font-size: 19px;
+    }
+    .promociones p{
+        font-size: 14px;
+    }
+    .promociones a{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width:1144px){
     .contacto div h2{
-        font-size: 30px;
+        font-size: 32px;
     }
     .contacto div p{
         font-size: 12px;
     }
     .contacto div a{
-        font-size: 9px;
+        font-size: 10px;
     }
     .contacto img{
-        width: 750px;
-        height: 460px;
+        width: 730px;
+        height: 420px;
+    }
+    .promociones h1{
+        font-size: 35px;
+    }
+    .promociones h2{
+        font-size: 18px;
+    }
+    .promociones p{
+        font-size: 13px;
+    }
+    .promociones a{
+        font-size: 15px;
     }
 
 }
@@ -88,9 +110,24 @@
     .interesado p{
         font-size: 20px;
     }
+    .promociones h1{
+        font-size: 33px;
+    }
+    .promociones h2{
+        font-size: 17px;
+    }
+    .promociones p{
+        font-size: 12px;
+    }
+    .promociones a{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:950px){
+    .hero p{
+        font-size: 19px;
+    }
     
     .grid-galeria{
         grid-template-columns: repeat(2, 1 fr);
@@ -153,9 +190,48 @@
     .acoso{
         display: none;
     }
+    .promociones h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:790px){
+    .hero p{
+        font-size: 17px;
+    }
+    .promociones h1{
+        font-size: 28px;
+    }
+    .promociones h2{
+        font-size: 15px;
+    }
+    .promociones p{
+        font-size: 11px;
+    }
+    .promociones a{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:766px){
+    .hero h1{
+        font-size: 48px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .promociones h1{
+        font-size: 26px;
+    }
+
 }
 
 @media  screen and (max-width: 715px){
+    .hero h1{
+        font-size: 47px;
+    }
+    .hero p{
+        font-size: 15px;
+    }
     .contacto div h2{
         font-size: 28px;
     }
@@ -165,6 +241,18 @@
     .contacto img{
         width: 590px;
         height: 300px;
+    }
+    .promociones h1{
+        font-size: 23px;
+    }
+    .promociones h2{
+        font-size: 14px;
+    }
+    .promociones p{
+        font-size: 10px;
+    }
+    .promociones a{
+        font-size: 12px;
     }
 }
 
@@ -178,7 +266,7 @@
         
     }
     .hero p{
-        font-size: 16px;
+        font-size: 14px;
     }
     .contacto img{
         width: 570px;
@@ -221,6 +309,18 @@
     .interesado p{
         font-size: 15px;
     }
+    .promociones h1{
+        font-size: 21px;
+    }
+    .promociones h2{
+        font-size: 13px;
+    }
+    .promociones p{
+        font-size: 9px;
+    }
+    .promociones a{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 570px){
@@ -237,7 +337,7 @@
     }
     .hero h1{
         padding: 15px;
-        font-size: 35px;
+        font-size: 40px;
     }
     .hero p{
         font-size: 13px;
@@ -263,11 +363,17 @@
         width: 200px;
         height: 180px;
     }
+    .promociones h1{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:470px){
     .hero h1{
-        font-size: 28px;
+        font-size: 32px;
+    }
+    .hero p{
+        font-size: 11px;
     }
     .contacto div{
         width: 55%;
@@ -293,16 +399,31 @@
     footer div{
         flex-direction: column;
     }
+    .promociones h1{
+        font-size: 16px;
+    }
 }
 
 @media  screen and (max-width:437px){
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero a{
+        font-size: 17px;
+    }
     .contacto img{
         width: 380px;
         height: 130px;
     }
+    .promociones h1{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:386px){
+    .hero a{
+        font-size: 16px;
+    }
     .contacto div h2{
         font-size: 12px;
     }

@@ -104,7 +104,8 @@ footer {
     background-color: rgba(99, 255, 47, 0.666);
     padding: 10px;
     border-radius: 7px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    transition: 1s; }
 
 /**-- contacto-- **/
 .contacto {
@@ -142,6 +143,12 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 20px; }
+  .habitaciones h1 {
+    text-align: center;
+    background-color: rgba(99, 255, 47, 0.666);
+    color: white;
+    padding: 20px;
+    border-radius: 4px; }
   .habitaciones h2 {
     text-align: center;
     background-color: black;
@@ -160,10 +167,10 @@ footer {
       text-align: center;
       background-color: black;
       color: white;
-      margin: 20px; }
+      margin: 20px;
+      transition: 1s; }
       .habitaciones .producto-contenedor div:hover {
         transform: scale(1.1);
-        transition: 1s;
         box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
         -webkit-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43);
         -moz-box-shadow: 10px 10px 5px 0px rgba(99, 255, 47, 0.43); }
@@ -272,8 +279,8 @@ footer {
 
 /**--Carrusel--**/
 .carrusel div img {
-  width: 400px;
-  height: 550px; }
+  height: 540px;
+  width: 600px; }
 
 .carrusel h5 {
   font-size: 30px;
@@ -467,6 +474,43 @@ footer {
   .galeria .grid-galeria .img-10 {
     grid-column: span 3; }
 
+/**--Promociones--**/
+.promociones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  flex-direction: column; }
+  .promociones img {
+    width: 100%;
+    height: 80vh; }
+  .promociones h1 {
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .promociones h2 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .promociones p {
+    text-align: center;
+    color: black;
+    font-size: 15px; }
+  .promociones a {
+    border: 2px solid grey;
+    color: white;
+    background-color: rgba(99, 255, 47, 0.666);
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    transition: 1s; }
+
 /*!---- MEDIA Q----*/
 @media screen and (max-width: 1196px) {
   .hero h1 {
@@ -483,18 +527,34 @@ footer {
   .contacto div p {
     font-size: 15px; }
   .contacto div a {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .promociones h1 {
+    font-size: 37px; }
+  .promociones h2 {
+    font-size: 19px; }
+  .promociones p {
+    font-size: 14px; }
+  .promociones a {
+    font-size: 16px; } }
 
 @media screen and (max-width: 1144px) {
   .contacto div h2 {
-    font-size: 30px; }
+    font-size: 32px; }
   .contacto div p {
     font-size: 12px; }
   .contacto div a {
-    font-size: 9px; }
+    font-size: 10px; }
   .contacto img {
-    width: 750px;
-    height: 460px; } }
+    width: 730px;
+    height: 420px; }
+  .promociones h1 {
+    font-size: 35px; }
+  .promociones h2 {
+    font-size: 18px; }
+  .promociones p {
+    font-size: 13px; }
+  .promociones a {
+    font-size: 15px; } }
 
 @media screen and (max-width: 1083px) {
   .contacto div h2 {
@@ -524,9 +584,19 @@ footer {
   .interesado h2 {
     font-size: 30px; }
   .interesado p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .promociones h1 {
+    font-size: 33px; }
+  .promociones h2 {
+    font-size: 17px; }
+  .promociones p {
+    font-size: 12px; }
+  .promociones a {
+    font-size: 14px; } }
 
 @media screen and (max-width: 950px) {
+  .hero p {
+    font-size: 19px; }
   .grid-galeria {
     grid-template-columns: repeat(2, 1 fr);
     grid-auto-rows: 220px; }
@@ -569,16 +639,50 @@ footer {
   .interesado p {
     font-size: 18px; }
   .acoso {
-    display: none; } }
+    display: none; }
+  .promociones h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 790px) {
+  .hero p {
+    font-size: 17px; }
+  .promociones h1 {
+    font-size: 28px; }
+  .promociones h2 {
+    font-size: 15px; }
+  .promociones p {
+    font-size: 11px; }
+  .promociones a {
+    font-size: 13px; } }
+
+@media screen and (max-width: 766px) {
+  .hero h1 {
+    font-size: 48px; }
+  .hero p {
+    font-size: 16px; }
+  .promociones h1 {
+    font-size: 26px; } }
 
 @media screen and (max-width: 715px) {
+  .hero h1 {
+    font-size: 47px; }
+  .hero p {
+    font-size: 15px; }
   .contacto div h2 {
     font-size: 28px; }
   .contacto div p {
     font-size: 12px; }
   .contacto img {
     width: 590px;
-    height: 300px; } }
+    height: 300px; }
+  .promociones h1 {
+    font-size: 23px; }
+  .promociones h2 {
+    font-size: 14px; }
+  .promociones p {
+    font-size: 10px; }
+  .promociones a {
+    font-size: 12px; } }
 
 @media screen and (max-width: 650px) {
   header {
@@ -587,7 +691,7 @@ footer {
   .hero h1 {
     font-size: 45px; }
   .hero p {
-    font-size: 16px; }
+    font-size: 14px; }
   .contacto img {
     width: 570px;
     height: 270px; }
@@ -617,7 +721,15 @@ footer {
   .interesado h2 {
     font-size: 20px; }
   .interesado p {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .promociones h1 {
+    font-size: 21px; }
+  .promociones h2 {
+    font-size: 13px; }
+  .promociones p {
+    font-size: 9px; }
+  .promociones a {
+    font-size: 10px; } }
 
 @media screen and (max-width: 570px) {
   header {
@@ -630,7 +742,7 @@ footer {
     margin: 3px; }
   .hero h1 {
     padding: 15px;
-    font-size: 35px; }
+    font-size: 40px; }
   .hero p {
     font-size: 13px; }
   .contacto div h2 {
@@ -647,11 +759,15 @@ footer {
   .descuentos img {
     margin: 15px;
     width: 200px;
-    height: 180px; } }
+    height: 180px; }
+  .promociones h1 {
+    font-size: 18px; } }
 
 @media screen and (max-width: 470px) {
   .hero h1 {
-    font-size: 28px; }
+    font-size: 32px; }
+  .hero p {
+    font-size: 11px; }
   .contacto div {
     width: 55%;
     margin: 10px; }
@@ -667,14 +783,24 @@ footer {
   .grid-item {
     grid-column: span 1; }
   footer div {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .promociones h1 {
+    font-size: 16px; } }
 
 @media screen and (max-width: 437px) {
+  .hero h1 {
+    font-size: 30px; }
+  .hero a {
+    font-size: 17px; }
   .contacto img {
     width: 380px;
-    height: 130px; } }
+    height: 130px; }
+  .promociones h1 {
+    font-size: 14px; } }
 
 @media screen and (max-width: 386px) {
+  .hero a {
+    font-size: 16px; }
   .contacto div h2 {
     font-size: 12px; }
   .contacto div p {
